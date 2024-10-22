@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "pnpm exec tailwindcss -i ./src/assets/css/style.css -o ./src/assets/css/style.output.css",
+    "deploy": "npm run build && gh-pages -d src",
     "dev:watch": "pnpm exec tailwindcss -i ./src/assets/css/style.css -o ./src/assets/css/style.output.css --watch"
   },
   "keywords": [],
@@ -13,6 +14,7 @@
   "license": "ISC",
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.9",
+    "gh-pages": "^6.2.0",
     "tailwindcss": "^3.4.14"
   }
 }
